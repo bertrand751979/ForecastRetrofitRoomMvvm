@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"><!--debut layout Horizontal-->
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/raw_picture"
+            android:layout_width="120dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="5dp"/>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"><!--debut layout vertical-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:text="JOUR: "
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/raw_day"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:text="Day"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="T°MATIN:"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="#880202"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/raw_low"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:text="Low"
+                android:textColor="#880202"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="4dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="T°SOIR:"
+                    android:textStyle="bold"
+                    android:textColor="@color/purple_700"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/raw_hight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center"
+                    android:text="Hight"
+                    android:textColor="@color/purple_700"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/raw_description"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:maxLines="4"
+                android:ellipsize="end"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout><!--fin layout vertical-->
+
+    </LinearLayout><!--debut layout horizontal-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"/>
+</LinearLayout>
